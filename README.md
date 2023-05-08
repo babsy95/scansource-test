@@ -13,7 +13,7 @@
 - The role-assigning feature has been added as part of the Edit user module.
 
 - The flow of the application is as follows:
-- Inserted Roles data as Admin, Manager, Associate and Supervisor as an example.
+- Inserted sample roles data as Admin, Manager, Associate and Supervisor on 'groups' table.
 - Inserted a main admin (admin@gmail.com) user in DB and gave the role of admin manually in DB(Since currently there are no roles for any user on the current system ).
 - When the admin user is logged in with the role of admin, I gave admin the privilege to create a new user, edit and assign new roles to existing users and delete existing users.
 - Any user who has a manager role has the same privileges as an Admin.
@@ -36,7 +36,7 @@
     - php artisan db:seed
 
 ## RUN the project:
-- On the project directory run the following commands (should run both in two separate terminals):
+- On the project directory run the following commands (both should run in two separate terminals):
     - php artisan serve 
     - npm run dev
 
