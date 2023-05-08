@@ -1,4 +1,3 @@
-# scansource-test
 PROJECT DESCRIPTION:
 
 PHP framework used: Laravel 9
