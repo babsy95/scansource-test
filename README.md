@@ -21,20 +21,23 @@ The flow of the application is as follows,
 
 -----------------------------------------------------------------------
 
-Commands to install the project:
-composer install
-npm install
+// Commands to install the project:
+-composer install
+-npm install
 
-commands to run the project (should run both in two separate terminals):
-php artisan serve 
-npm run dev
+// commands to run the project (should run both in two separate terminals):
+-php artisan serve 
+-npm run dev
+
+DATABASE 
+//commands to run migrations and seeder. (Dump file is also added)
+
+CREATE DATABASE `scansource-test`;
+
+-php artisan migrate
+-php artisan db:seed
 
 Can be accessed from the default port - http://127.0.0.1:8000
 
 -------------------------------------------------------------------------
-DATABASE 
 
-
-CREATE DATABASE `scansource-test`;
-
-php artisan db:seed --class=sampleDataSeeder
