@@ -3,7 +3,7 @@
 ## PROJECT DESCRIPTION:
 
 - PHP framework used: Laravel 9
-- DB Tables Used: 
+- MySQL DB Tables Used: 
 	- Users: Table for all users in a single one.
 	- groups: Table for saving groups/roles.
 	- user_groups: Table for assigning multiple roles to the users.
@@ -23,20 +23,20 @@
 -----------------------------------------------------------------------
 
 ## Install project's supporting files (Vendor, NodeModule):
-- On the project directory run the following commands:
+- On the project directory terminal run the following commands:
     - composer install
     - npm install
 
 
 ## Create Database tables and sample data:
-- Commands to run migrations and seeder (OR Dump file scansource-test.sql is added can be executed) :
+- Commands to run migrations and seeder (OR the Dump file 'scansource-test.sql' is added on the root directory of the project, which can be executed) :
 - CREATE DATABASE `scansource-test`; (Run the Command on PHPMyAdmin/Workbench)
 - On the project directory run the following commands:
     - php artisan migrate
     - php artisan db:seed
 
 ## RUN the project:
-- On the project directory run the following commands (both should run in two separate terminals):
+- On the project directory terminal run the following commands (both should run in two separate terminals):
     - php artisan serve 
     - npm run dev
 
