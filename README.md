@@ -1,4 +1,5 @@
 # scansource-test
+
 PROJECT DESCRIPTION:
 
 -PHP framework used: Laravel 9
@@ -11,7 +12,7 @@ PROJECT DESCRIPTION:
 - Once the account is logged in, I provided a User management module(CRUD)
 - The role-assigning feature has been added as part of the Edit user module.
 
-- The flow of the application is as follows,
+- The flow of the application is as follows:
 - Inserted Roles data as Admin, Manager, Associate and Supervisor as an example.
 - Inserted a main admin (admin@gmail.com) user in DB and gave the role of admin manually in DB(Since currently there are no roles for any user on the current system ).
 - When the admin user is logged in with the role of admin, I gave admin the privilege to create a new user, edit and assign new roles to existing users and delete existing users.
@@ -21,23 +22,36 @@ PROJECT DESCRIPTION:
 
 -----------------------------------------------------------------------
 
-// Commands to install the project:
--composer install
--npm install
+Install project's supporting files (Vendor, NodeModule):
+- On the project directory run the following commands:
+    - composer install
+    - npm install
 
-// commands to run the project (should run both in two separate terminals):
--php artisan serve 
--npm run dev
 
-DATABASE 
-//commands to run migrations and seeder. (Dump file is also added)
+Create Database tables and sample data:
+//commands to run migrations and seeder. (OR Dump file scansource-test.sql is also added)
 
-CREATE DATABASE `scansource-test`;
+CREATE DATABASE `scansource-test`; (Run the Command on PHPMyAdmin/Workbench)
+- On the project directory run the following commands:
+    - php artisan migrate
+    - php artisan db:seed
 
--php artisan migrate
--php artisan db:seed
+RUN the project:
+- On the project directory run the following commands (should run both in two separate terminals):
+    - php artisan serve 
+    - npm run dev
 
-Can be accessed from the default port - http://127.0.0.1:8000
+- Can be accessed from the default port - http://127.0.0.1:8000
 
--------------------------------------------------------------------------
+- GIT URL: https://github.com/babsy95/scansource-test
+
+
+Requirements Completed:
+-Commit your code (via git) as if you are working on a production project
+-Create a management interface for managing users with a focus on updating existing users
+-Create backend CRUD code with a focus on reading and updating existing users
+-Bonus (not a requirement for this assessment): Add front and/or backend code for creating and deleting users
+-Submitted code provided must contain:
+    -PHP 7.3 or higher
+    -MySQL/MariaDB
 
